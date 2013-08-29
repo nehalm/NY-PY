@@ -1,0 +1,52 @@
+{% extends "skeleton.html" %}
+{% load staticfiles %}
+{% block pagestyles %}
+  <link href="{% static 'css/landing.min.css' %}" rel="stylesheet">
+{% endblock pagestyles %}
+
+{% block content %}
+  <nav class="disembodied">
+    <div class="signin">
+      <a href="/signin">Sign in</a>
+    </div>
+  </nav>
+
+  <section class="who-we-are">
+    <header>
+      <h1>NY<span class="brand-heart"></span>PY</h1>
+      <h5>
+        is a community-run directory of everything python in 
+        NYC: a list of who uses python, how they use it, 
+        and everything else.
+      </h5>
+    </header>
+  </section>
+
+  <section class="signup">
+    <div class="signup-type-sorter">
+      <div class="profile-type profile-type-programmer">
+        <button class="hero-button" profile-type="programmer">Sign up as a programmer</button>
+      </div>
+      <div class="profile-type profile-type-recruiter">
+        <button class="hero-button" profile-type="recruiter">Sign up as a non-programmer</button>
+      </div>
+    </div>
+    <div class="signup-faq">
+      <p class="when-collapsed">
+        Got questions? We've got answers!
+      </p>
+      <section class="the-answers">
+        <dl class="q-and-a">
+          <dt>I'm just learning...</dt>
+          <dd>Wonderful! Sign up as a programmer. We'll handle the details later.</dd>
+
+          <dt>I'm a recruiter, but I want to sign up as a programmer.</dt>
+          <dd>Don't be a jerk. We'll blacklist you if you get spammy.</dd>
+          
+          <dt>I don't want to be spammed.</dt>
+          <dd>Neither do we. We're very clear about what's public, what's private, and how we communicate with you. We promise to be conscientious and defend your inbox and privacy with positive community-building, and if that doesn't work, then with spammer-shaming and banhammers.</dd>
+        </dl>
+      </section>
+    </div>
+  </section>
+{% endblock content %}

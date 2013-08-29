@@ -22,3 +22,6 @@ build
 
 .DS_Store
 *.pyc
+
+#Gabe's virtualenv
+.venv
