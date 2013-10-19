@@ -20,13 +20,13 @@
   </head>
 
   <body>
-
-    <div class="outer-wrapper">
+    {% block nav %}{% endblock %}
+    <div class="container">
       <div class="inner-wrapper">
         {% block content %}{% endblock content %}
       </div>
     </div>
-    
+
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
 

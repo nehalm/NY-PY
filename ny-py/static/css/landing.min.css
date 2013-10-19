@@ -1,1 +1,16 @@
 .who-we-are h1{font-size:71px;}
+
+.q-and-a dt{
+    color: navy;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+.q-and-a dd{
+    color: gray;
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 1em;
+    padding-bottom: 20px;
+    line-height: 1.3
+}
